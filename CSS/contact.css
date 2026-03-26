@@ -302,3 +302,8 @@ iframe{
      border-radius: 10px;
   box-shadow: 0 0 7px 1px gray;
 }
+@media (min-width:300px) and (max-width:510px){
+.contact-epix img{
+  width: 300px;
+}
+}

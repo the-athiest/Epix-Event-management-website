@@ -64,7 +64,7 @@
     /* z-index: 1; */
     cursor: pointer;
  }
-@media(max-width:768px){
+@media (max-width:768px){
  .links{
     display: none;
     position: absolute;
@@ -92,6 +92,15 @@ flex-wrap: wrap;
 justify-content: center;
 gap: 20px;
  margin: 150px 10px 10px 10px;
+}
+@media (min-width:300px) and (max-width:510px){
+    .banner .content h1{
+        font-size:35px ;
+         line-height: 37px;
+    }
+    .banner .content p{
+        font-size:15px ;
+    }
 }
  .content{
     /* border: 1px solid; */

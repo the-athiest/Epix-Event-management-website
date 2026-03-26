@@ -256,3 +256,25 @@
 .vision h1{
     padding: 10px 0 20px;
 }
+@media (min-width:300px) and (max-width:510px){
+    .service-card {
+        width: 300px;
+         margin-left: -20px;
+    }
+    .box1 {
+        width: 300px;
+        /* margin: auto; */
+    }
+    .services h1{
+        font-size: 30px;
+        line-height: 35px;
+        margin-left: -50px;
+
+    }
+    .services h3{
+       
+        line-height: 35px;
+        margin-left: -50px;
+
+    }
+}
