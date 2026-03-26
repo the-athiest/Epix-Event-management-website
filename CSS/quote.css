@@ -181,20 +181,21 @@ border-radius: 6px;
 .icon1{
     display: flex;
     gap: 20px;
+    align-items: center;
     /* margin: 30px; */
    
 }
+
 .icon1 i {
     font-size: 25px;
     background-color:orangered;
     padding: 11.4px 18px;
     border-radius: 360px;
     color: white;
+    
 
 }
-.icon1 div h3{
-    margin-top: 7px;
-}
+
 .icon1 div p{
     font-size: 15px;
     font-weight: 200;
