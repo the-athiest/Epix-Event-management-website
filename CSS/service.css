@@ -20,8 +20,16 @@
     background-color:rgb(2, 2, 30);
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 9999;
 
+}
+
+.accordion,
+.accordion-item,
+.accordion-button,
+.accordion-collapse {
+    z-index: 1;
+    position: relative;
 }
 .links li a:hover{
     color: orangered;
@@ -33,10 +41,32 @@
 .navbar img{
     padding: 20px 28px;
     width: 175px;
+     animation: movelogo 1s ease-out ;
+}
+@keyframes movelogo{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .links{
     display: flex;
     padding: 0 10px 0 0;
+ animation: movelinks 1s ease-out ;
+}
+@keyframes movelinks{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .links li{
     list-style: none;
@@ -96,10 +126,22 @@
     font-weight: 600;
     text-transform: uppercase;
     padding: 10px 0;
+    animation:services 1s ease-out ;
 }
 .services h1{
    font-size: 45px;
    line-height: 50px;
+  animation:services 1s ease-out ;
+}
+@keyframes services{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .box{
@@ -108,6 +150,17 @@
      flex-wrap: wrap;
      justify-content: center;
      gap: 50px;
+     animation: movebox 1s ease-out ;
+}
+@keyframes movebox{
+    0%{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .box1{
     width: 400px;
@@ -256,6 +309,23 @@
 .vision h1{
     padding: 10px 0 20px;
 }
+.service-subtitle {
+    color: #555;
+    margin: 8px 0 16px;
+    font-size: 18px;
+    max-width: 700px;
+}
+.accordion-body h5 {
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+}
+.accordion-subtext {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
 @media (min-width:300px) and (max-width:510px){
     .service-card {
         width: 300px;
@@ -277,4 +347,36 @@
         margin-left: -50px;
 
     }
+}
+/* Section title */
+.service-title{
+text-align:center;
+font-size:40px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+/* Accordion styling */
+
+.accordion-button{
+font-weight:600;
+font-size:18px;
+transition:0.3s;
+}
+
+.accordion-button:hover{
+background:#0d6efd;
+color:white;
+}
+
+.accordion-item{
+border-radius:10px;
+overflow:hidden;
+margin-bottom:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Smooth animation */
+.accordion-collapse{
+transition:all 0.4s ease;
 }

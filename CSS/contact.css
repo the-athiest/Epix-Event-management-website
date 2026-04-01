@@ -32,10 +32,32 @@
 .navbar img{
     padding: 20px 28px;
     width: 175px;
+     animation: movelogo 1s ease-out ;
+}
+@keyframes movelogo{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .links{
     display: flex;
     padding: 0 10px 0 0;
+ animation: movelinks 1s ease-out ;
+}
+@keyframes movelinks{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .links li{
     list-style: none;
@@ -109,17 +131,47 @@
   flex: 1;
 }
 
-.contact-form h2 {
+.contact-form h2{
   margin-bottom: 35px;
+  animation:h111 1s ease-out ;
+}
+.contact-info .h22 {
+  animation:h111 1s ease-out !important;
 }
 
-.container h4{
+.contact-form h4{
     color: orangered;
+  animation:h111 1s ease-out ;
+}
+.contact-info h4{
+animation:h111 1s ease-out ;
+color: orangered;
+}
+@keyframes h111{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 39px;
+  animation:form 1s ease-out ;
+}
+@keyframes form{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .contact-form .row {
@@ -178,6 +230,17 @@
   margin-top: 35px;
   border-radius: 8px;
   box-shadow: 0 0 3px 0px gray;
+  animation:infobox 1s ease-out ;
+}
+@keyframes infobox{
+    0%{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .info-box:hover{
     box-shadow: 0 0 15px 2px rgb(21, 23, 32);

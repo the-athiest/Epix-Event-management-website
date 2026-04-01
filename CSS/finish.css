@@ -33,10 +33,32 @@
 .navbar img{
     padding: 20px 28px;
     width: 175px;
+     animation: movelogo 1s ease-out ;
+}
+@keyframes movelogo{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .links{
     display: flex;
     padding: 0 10px 0 0;
+ animation: movelinks 1s ease-out ;
+}
+@keyframes movelinks{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .links li{
     list-style: none;
@@ -105,18 +127,32 @@
     font-size:60px;
     color:#0a2540;
     margin-bottom:10px;
+    animation: thank 1s ease-out ;
+}
+
+@keyframes thank{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .company-name{
     font-size:32px;
     color:#e63946;
     margin-bottom:20px;
+    animation: thank 1s ease-out ;
 }
 
 .thank-message{
     font-size:18px;
     color:#444;
     margin-bottom:40px;
+    animation: thank 1s ease-out ;
 }
 
 .image-container{
@@ -126,6 +162,17 @@
     flex-wrap:wrap;
     margin-bottom:40px;
     /* overflow: hidden; */
+    animation: imagefade 1s ease-out ;
+}
+@keyframes imagefade{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .image-container img{
@@ -147,7 +194,19 @@
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
     margin-bottom:30px;
+    animation: infobox 1s ease-out ;
 }
+@keyframes infobox{
+    0%{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 .info-box h3{
     margin-bottom:15px;

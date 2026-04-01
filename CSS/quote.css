@@ -33,10 +33,32 @@
 .navbar img{
     padding: 20px 28px;
     width: 175px;
+     animation: movelogo 1s ease-out ;
+}
+@keyframes movelogo{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .links{
     display: flex;
     padding: 0 10px 0 0;
+ animation: movelinks 1s ease-out ;
+}
+@keyframes movelinks{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .links li{
     list-style: none;
@@ -91,8 +113,19 @@
  section{
     padding: 60px 20px;
     margin-top: 140px;
-   
+      animation:infobox 1s ease-out ;
  }
+ @keyframes infobox{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
  .container
  {
     max-width: 1400px;
