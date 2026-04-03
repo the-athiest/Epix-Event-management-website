@@ -256,6 +256,7 @@ color: orangered;
 
   .contact-form .row1 {
     flex-direction: column;
+    gap:44px ;
   }
   .cont{
     flex-wrap: wrap;

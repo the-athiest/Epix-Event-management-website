@@ -152,6 +152,15 @@
     .location .heading p {
         font-size:15px ;
     }
+
+}
+@media (min-width:300px) and (max-width:480px){
+.con{
+ padding: 10px 35px !important;
+    }
+    .con a {
+        font-size: 16px !important;
+    }
 }
 .p1{
     text-align: center;
@@ -458,6 +467,8 @@ background-color:rgba(128, 128, 128,0.1);
     .ratio-card {
         padding: 20px 18px;
     }
+    
+ 
 }
 
 .event h4{
