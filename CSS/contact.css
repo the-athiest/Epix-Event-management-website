@@ -113,7 +113,7 @@
 
 .contact-section {
   padding: 60px 20px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .container {
@@ -160,7 +160,7 @@ color: orangered;
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  gap: 44px;
   animation:form 1s ease-out ;
 }
 @keyframes form{
@@ -174,7 +174,7 @@ color: orangered;
     }
 }
 
-.contact-form .row {
+.contact-form .row1 {
   display: flex;
   gap: 15px;
 }
@@ -182,7 +182,7 @@ color: orangered;
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 3px 0px gray;
@@ -197,12 +197,12 @@ color: orangered;
 }
 
 .contact-form textarea {
-  height: 120px;
+  height: 150px;
 }
 
 .contact-form button {
   background:orangered;
-  padding: 8px;
+  padding: 12px 0;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -254,7 +254,7 @@ color: orangered;
     flex-direction: column;
   }
 
-  .contact-form .row {
+  .contact-form .row1 {
     flex-direction: column;
   }
   .cont{
