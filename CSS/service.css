@@ -329,7 +329,7 @@
 @media (min-width:300px) and (max-width:510px){
     .service-card {
         width: 300px;
-       margin-left:-13px !important;
+       margin-left:-25px !important;
        /* justify-content: center; */
     }
     .box1 {
