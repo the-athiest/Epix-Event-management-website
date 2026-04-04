@@ -257,7 +257,6 @@
     .services2 {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 }
 
@@ -330,8 +329,8 @@
 @media (min-width:300px) and (max-width:510px){
     .service-card {
         width: 300px;
-       /* margin: auto; */
-       justify-content: center;
+       margin-left:-13px !important;
+       /* justify-content: center; */
     }
     .box1 {
         width: 300px;
