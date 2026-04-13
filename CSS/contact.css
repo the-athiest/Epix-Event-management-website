@@ -94,7 +94,7 @@
     background-color: black;
     right: 48px;
     top: 35px;
-    height: 250px;
+    height: 330px;
     padding: 15px;
     box-shadow: 0 0 10px 1px rgb(84, 84, 79);
     border-radius: 10px;
@@ -112,8 +112,8 @@
 
 
 .contact-section {
-  padding: 60px 20px;
-  margin-top: 80px;
+  padding: 30px 20px 60px;
+  margin-top: 0px;
 }
 
 .container {
@@ -243,10 +243,28 @@ color: orangered;
     }
 }
 .info-box:hover{
-    box-shadow: 0 0 15px 2px rgb(21, 23, 32);
+    box-shadow: 0 0 15px 2px rgb(216, 217, 221);
 }
 .info-box i{
     color: orangered;
+}
+
+.card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-14px) scale(1.04);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.22);
+  border-color: rgb(106, 168, 202);
+}
+.card .card-img-top {
+  transition: transform 0.35s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.08) rotate(1deg);
 }
 
 @media (max-width: 768px) {
@@ -373,4 +391,69 @@ iframe{
 iframe{
     margin: 0 20px 0 20px ;
 }
+}
+
+/* Banner Page Styles */
+.page-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/g4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.page-banner h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+.page-banner p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-out;
+}
+
+.page-banner p a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.page-banner p a:hover {
+    color: orangered;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fix for content spacing after adding banner */
+/* .contact-section {
+    margin-top: 20px !important;
+} */
+
+@media (max-width: 768px) {
+    .page-banner {
+        height: 250px;
+    }
+    .page-banner h1 {
+        font-size: 2.5rem;
+    }
 }
