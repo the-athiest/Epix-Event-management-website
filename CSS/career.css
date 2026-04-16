@@ -457,9 +457,7 @@ textarea::placeholder {
     background: rgba(255,255,255,0.1);
 }
 
-.file-input {
-    /* padding: 8px !important; */
-}
+
 
 .submit-btn {
     grid-column: 1 / span 2;
