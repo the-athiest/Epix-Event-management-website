@@ -50,11 +50,11 @@
 }
 @keyframes movelinks{
     0%{
-        transform: translateY(-300px);
+        transform: translateX(300px);
         opacity: 0;
     }
     100%{
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -97,23 +97,24 @@
     color: white;
     font-size: 30px;
     position: absolute;
-    right:50px;
+    right:40px;
     top: 35px;
-    /* z-index: 1; */
+    z-index: 3;
     cursor: pointer;
  }
-@media (max-width:768px){
+@media (max-width:1200px){
  .links{
     display: none;
     position: absolute;
     background-color: black;
-    right: 48px;
+    right: 15px;
     top: 35px;
     height: 370px;
     padding: 15px;
     box-shadow: 0 0 10px 1px rgb(7, 7, 0);
     border-radius: 10px;
  }
+ 
  
 .hamburger{
     display: block;
@@ -173,7 +174,17 @@
      gap: 15px;
     color: white;
     padding: 20px;
-    animation:imgcontent2 1s ease-out ;
+    animation: slideup 1s ease-out ;
+}
+@keyframes slideup{
+    0%{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .banner1 .imgcontent2 button{
     background-color: orangered;
@@ -186,16 +197,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-@keyframes imgcontent2{
-    0%{
-        transform: translateY(300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 .banner1 .imgcontent2 button:hover{
     background-color: #ff4500;
 }
@@ -210,7 +212,7 @@
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 20px;
+gap: 60px;
  margin:30px 10px 10px 10px;
 }
  .content{
@@ -227,18 +229,9 @@ gap: 20px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 800;
-   animation: moveh1 1s ease-out ;
+   
 }
-@keyframes moveh1{
-    0%{
-        transform: translateY(-300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 
 .content h1 span{
     background:linear-gradient(to right,rgb(226, 129, 55),orangered);
@@ -248,37 +241,21 @@ gap: 20px;
 .content p{
     font-size: 19px;
       /* text-shadow: 2px 2px 5px gray; */
-    font-weight: 500;
+    color: #373535;
+    font-weight: 400;
     text-align: justify;
- animation: movep 1s ease-out ;
+ /* max-width: 700px;
+ display: flex;
+ justify-content: left; */
 }
-@keyframes movep{
-    0%{
-        transform: translateX(-300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
 .button{
     display: flex;
     gap: 30px;
     /* margin-right: 250px; */
     margin-top: 10px;
- animation: movebutton 1s ease-out ;
 }
-@keyframes movebutton{
-    0%{
-        transform: translateY(300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 .b1{
     padding: 15px 30px;
     border: none;
@@ -319,23 +296,13 @@ gap: 20px;
 }
 
  .bannerimage{
-width: 700px;
+width: 680px;
 height: 700px;
 overflow: hidden;
 border-radius: 30px;
 box-shadow: 0 0 12px 1px rgb(0, 0, 0);
- animation: moveimg 1s ease-out ;
 }
-@keyframes moveimg{
-    0%{
-        transform: translateX(300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
 .bannerimage img{
     width: 700px;
     height:700px;
@@ -405,19 +372,6 @@ body .container .content2{
      position: relative;
      transform: rotate(1.5deg);
      transition: 0.7s ease 0s;
-     animation:moveimg2 1s ease-out;
-     animation-timeline: view();
-     animation-range: entry 0% cover 50%;
-}
-@keyframes moveimg2{
-   0%{
-        transform: translateX(-300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 .image2:hover{
@@ -444,20 +398,9 @@ transform: rotate(0deg);
     flex-direction: column;
     gap: 15px;
  
- animation:movecontent2 1s ease-out ;
-     animation-timeline: view();
-     animation-range: entry 0% cover 50%;
+
 }
-@keyframes movecontent2{
-    0%{
-        transform: translateX(300px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
 .content2 h3{
     color: orangered;
 }
@@ -491,7 +434,7 @@ transform: rotate(0deg);
 .footer{
     background:#222;
     color:white;
-    
+    padding:40px 0;
     margin-top: 40px;
 }
 
@@ -768,12 +711,25 @@ transition: opacity 0.6s ease, transform 0.6s ease;
     width:300px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.3s;
+    transition:all 0.6s ease-out;
 }
 
 .result-card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-15px);
+    background-color: rgb(5, 5, 45);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform-origin: bottom;
 }
+.result-card:hover .icon{
+    background-color: rgb(242, 133, 65);
+    color:white;
+}
+.result-card:hover h3{
+    color:white;
+} 
+.result-card:hover p{
+    color:#ddd;
+}  
 
 .icon{
     font-size:30px;
