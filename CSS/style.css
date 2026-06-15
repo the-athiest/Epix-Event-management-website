@@ -133,7 +133,7 @@
     .banner .content p{
         font-size:15px ;
     }
-   
+    
     body .container {
     padding: 20px;
     display: flex;
@@ -717,8 +717,9 @@ transition: opacity 0.6s ease, transform 0.6s ease;
 .result-card:hover{
     transform:translateY(-15px);
     background-color: rgb(5, 5, 45);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 5px rgb(0, 0, 0);
     transform-origin: bottom;
+    border: 2px solid white;
 }
 .result-card:hover .icon{
     background-color: rgb(242, 133, 65);
@@ -730,6 +731,7 @@ transition: opacity 0.6s ease, transform 0.6s ease;
 .result-card:hover p{
     color:#ddd;
 }  
+
 
 .icon{
     font-size:30px;

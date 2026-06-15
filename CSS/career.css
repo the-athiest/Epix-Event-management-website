@@ -103,7 +103,7 @@
  
  
 .hamburger{
-    display: block;
+    display: block; 
 }
 .main:hover .links{
     display: flex;
@@ -125,7 +125,7 @@
 }
 
 section {
-    padding: 80px 10%;
+    padding: 55px 10%;
     overflow: hidden;
 }
 
@@ -356,29 +356,30 @@ section {
 }
 
 /* Interview Procedure */
-.steps-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
 
-.step-box {
+.steps-container {
+    display:flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+/* .step-box {
     text-align: center;
     padding: 40px 20px;
     background: #fff;
     border-radius: 15px;
     transition: var(--transition);
     border: 1px solid #eee;
-}
+} */
 
 .step-box:hover {
     background: var(--dark-bg);
     color: white;
 }
 
-.step-box:hover p {
-    color: var(--text-gray);
-}
+
 
 .step-num {
     font-size: 3rem;
@@ -392,8 +393,70 @@ section {
 .step-box h4 {
     position: relative;
     z-index: 1;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+.step-box p{
+    font-weight: 250;
+}
+
+/* From Uiverse.io by AyuuLima */ 
+.step-box {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: rgb(5, 5, 59);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* justify-content: center; */
+  text-align: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.step-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 15px;
+  background: linear-gradient(-45deg, #1cc2ff 0%, #ff261b 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.step-box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #1cffa4 0%, #ff01aee6 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  /* filter: blur(40px); */
+}
+
+
+.step-box:hover::after {
+  filter: blur(50px);
+}
+
+.step-box:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.step-box:hover {
+  transform: scale(1);
+}
+
+
+
 
 /* Apply Section */
 .apply-section {
